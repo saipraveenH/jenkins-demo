@@ -24,9 +24,11 @@ pipeline {
 		}
 
 		stage('Deploy') {
-			bat '''
-   				echo "Deploying in nexus repository...."
-       			'''
+			steps{
+				bat '''
+   					echo "Deploying in nexus repository...."
+       				'''
+			}
 		}
 	}
 }
